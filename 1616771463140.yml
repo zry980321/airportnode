@@ -54,7 +54,7 @@ proxies:
     tls: true
     skip-cert-verify: true
   - name: 广东移动1
-    server: 120.232.215.33
+    server: 120.240.52.225
     port: 29980
     type: http
     username: "427906448366764032"
@@ -62,7 +62,7 @@ proxies:
     tls: true
     skip-cert-verify: true
   - name: 广东移动2
-    server: 120.232.215.32
+    server: 120.240.52.226
     port: 29980
     type: http
     username: "427906448366764032"
