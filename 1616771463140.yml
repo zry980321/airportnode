@@ -38,7 +38,7 @@ proxies:
     tls: true
     skip-cert-verify: true
   - name: 佛山电信2
-    server: 59.39.66.132
+    server: 125.94.242.250
     port: 29980
     type: http
     username: "427906448366764032"
