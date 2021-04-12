@@ -9,72 +9,72 @@ proxies:
     server: 211.99.98.188
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 唯一网络BGP2
     server: 211.99.98.54
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 唯一网络BGP3
     server: 211.99.98.70
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 佛山电信1
     server: 59.39.66.130
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 佛山电信2
     server: 125.94.242.250
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 佛山电信3
     server: 59.39.66.133
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 广东移动1
     server: 120.240.52.225
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 广东移动2
     server: 120.240.52.226
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - name: 广东移动3
     server: 120.232.251.202
     port: 29980
     type: http
-    username: "427906448366764032"
-    password: 678dca12-4c74-482f-b3bb-790e6fbb1e94
+    username: "433760530176409600"
+    password: 3d6dc989-90ab-4dc4-9318-ef1e2bc06d3d
     tls: true
     skip-cert-verify: true
   - {name: 日本软银, server: c1s4.jamjams.net, port: 19970, type: vmess, uuid: 6213d0c0-432f-445c-8a47-f58b9152b212, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: c1s4.jamjams.net}, udp: true}
