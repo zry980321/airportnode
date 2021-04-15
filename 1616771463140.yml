@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - name: 唯一网络BGP1
-    server: 211.99.98.188
+    server: a1.ap.fastqvpn.com
     port: 29980
     type: http
     username: "433237168782049280"
