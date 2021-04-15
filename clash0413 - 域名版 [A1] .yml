@@ -1,0 +1,182 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+  - name: 丰1
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433237168782049280"
+    password: 59a12ed3-66a3-40ba-a2fb-4e6f3dd65362
+    tls: true
+  - name: 丰2 
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433010781643079680"
+    password: f9d05566-613d-40da-9751-263074bd6931
+    tls: true
+  - name: 丰3 
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433035472621535232"
+    password: 9337f838-70d6-4ba1-bc0d-5b67fdef9cd9
+    tls: true   
+  - name: 丰4 
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433162341962481664"
+    password: 8d1f29ac-cfed-4633-b673-73418b06044f
+    tls: true
+  - name: 丰5 
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433238047547457536"
+    password: 0015a511-e4a3-4f76-b6dc-183466d08c41
+    tls: true
+  - name: 丰6 
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433240641716092928"
+    password: e73b2ad8-8aab-4386-904d-6206f6fef1dc
+    tls: true
+  - name: 丰7 
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433238697656188928"
+    password: 4b78a57e-00fe-4de8-bea2-d185107b26f5
+    tls: true                           
+  - name: 丰8
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433239892865056768"
+    password: 29d982bb-76bd-4d9f-90ee-450708560a98
+    tls: true
+  - name: 丰9
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433240311473373184"
+    password: 4a097922-7aaa-4871-b385-b2853d69ecaf
+    tls: true   
+  - name: 丰10
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433375143729823744"
+    password: f6e08482-5a44-4da7-a587-7d5346beed07
+    tls: true
+  - name: 丰11
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433284015949086720"
+    password: 7daa181b-6280-4fd4-b7ce-925eeec67f2f
+    tls: true
+  - name: 丰12
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433375473855102976"
+    password: e5c20482-d0c8-4dce-bad7-cbdb722aac47
+    tls: true
+  - name: 丰13
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433375451621097472"
+    password: 8391795f-888e-4274-ba4f-18bebb50aeb4
+    tls: true
+  - name: 丰14
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433375328467943424"
+    password: 8a8532c7-e749-44a3-a9cb-8e883a9b4f80
+    tls: true
+  - name: 丰15
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433375175547813888"
+    password: 7caca3a6-c609-423a-92b6-67061780acf5
+    tls: true
+  - name: 丰16
+    server: a1.ap.fastqvpn.com
+    port: 29980
+    type: http
+    username: "433377578863034368"
+    password: 0829ae81-e024-4e55-b500-cd0ff4decfe8
+    tls: true                               
+proxy-groups:
+  - name: "🔰 节点选择"
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 丰1
+      - 丰2
+      - 丰3
+      - 丰4
+      - 丰5
+      - 丰6
+      - 丰7
+      - 丰8
+      - 丰9
+      - 丰10
+      - 丰11
+      - 丰12
+      - 丰13
+      - 丰14
+      - 丰15
+      - 丰16
+  - name: "♻️ 自动选择"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 丰1
+      - 丰2
+      - 丰3
+      - 丰4
+      - 丰5
+      - 丰6
+      - 丰7
+      - 丰8
+      - 丰9
+      - 丰10
+      - 丰11
+      - 丰12
+      - 丰13
+      - 丰14
+      - 丰15
+      - 丰16
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+rules:
+- DOMAIN-SUFFIX,google.com,🔰 节点选择
+- DOMAIN-KEYWORD,google,🔰 节点选择
+- DOMAIN-KEYWORD,github,🔰 节点选择
+- DOMAIN-KEYWORD,youtube,🔰 节点选择
+- DOMAIN,google.com,🔰 节点选择
+- DOMAIN-SUFFIX,ad.com,REJECT
+- IP-CIDR,127.0.0.0/8,🎯 全球直连,DIRECT
+- GEOIP,CN,🎯 全球直连,DIRECT
+- MATCH,🔰 节点选择
